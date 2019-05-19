@@ -1,10 +1,10 @@
 // Code your solution in this file!
-function distanceFromHqInBlocks(dest) {
-  return;
+function distanceFromHqInBlocks(location) {
+  return location - 42;
 }
 
-function distanceFromHqInFeet(dest) {
-  return distanceFromHqInBlocks * 264;
+function distanceFromHqInFeet(location) {
+  return distanceFromHqInBlocks(location) * 264;
 }
 
 function distanceTravelledInFeet() {
