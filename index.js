@@ -12,5 +12,19 @@ function distanceTravelledInFeet(start, destination) {
 }
 
 function calculatesFarePrice(start, destination) {
-  return;
+  let response;
+  let distance = distanceTravelledInFeet(start, destination);
+  if (distance > 2500) {
+    response = "cannot travel that far";
+  }
+  else if (distance > 2000) {
+    response = 25;
+  }
+  else if (distance > 400) {
+    response = (distance - 400) * 2;
+  }
+  else {
+    response = 0;
+  }
+  return response;
 }
